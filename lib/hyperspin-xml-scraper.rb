@@ -1,5 +1,7 @@
+$: << File.dirname(__FILE__)
+
 require 'nokogiri'
-load 'application_config.rb'
+require 'application_config'
 
 config = Configuration.for 'application'
 doc = Nokogiri::XML(File.open(config.xml_path))
