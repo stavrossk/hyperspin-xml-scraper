@@ -1,7 +1,7 @@
 require 'nokogiri'
 load 'application_config.rb'
 
-config = Configuration.for 'application-config'
+config = Configuration.for 'application'
 doc = Nokogiri::XML(File.open(config.xml_path))
 
 # Create minimal Hyperspin XML file
